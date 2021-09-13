@@ -7,12 +7,8 @@
 
 import Foundation
 
-enum PrivacySetting: String, CaseIterable {
-    case profile = "Set profile to private?"
-}
-
 protocol PreferencesStoreProtocol: ObservableObject {
-    var profilePreference: PrivacyLevel { get }
+    var profilePreference: PrivacyLevel { get set }
 }
 
 final class PreferenceStore: PreferencesStoreProtocol {

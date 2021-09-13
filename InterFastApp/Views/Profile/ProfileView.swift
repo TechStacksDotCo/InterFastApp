@@ -25,6 +25,10 @@ struct ProfileView<ContentProvider>: View where ContentProvider: ProfileContentP
                 }
             }
             .navigationBarTitle("Profile View")
+            .navigationBarItems(trailing:   NavigationLink(destination:   PreferencesView<PreferenceStore>()) {
+                    Image(systemName: "gear")
+                }
+            )
         }
     }
 }

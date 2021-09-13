@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FC5F08126EF752800D18B6F /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC5F08026EF752800D18B6F /* Mock.swift */; };
+		6FC5F08326EF759100D18B6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC5F08226EF759100D18B6F /* User.swift */; };
+		6FC5F08926EF783C00D18B6F /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC5F08826EF783C00D18B6F /* PreferencesView.swift */; };
+		6FC5F08B26EF7B5200D18B6F /* PrivacySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC5F08A26EF7B5200D18B6F /* PrivacySetting.swift */; };
 		6FC9B81526E38B2A00652E7B /* InterFastAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9B81426E38B2A00652E7B /* InterFastAppApp.swift */; };
 		6FC9B81726E38B2A00652E7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9B81626E38B2A00652E7B /* ContentView.swift */; };
 		6FC9B81926E38B2C00652E7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC9B81826E38B2C00652E7B /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6FC5F08026EF752800D18B6F /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		6FC5F08226EF759100D18B6F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6FC5F08826EF783C00D18B6F /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		6FC5F08A26EF7B5200D18B6F /* PrivacySetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySetting.swift; sourceTree = "<group>"; };
 		6FC9B81126E38B2A00652E7B /* InterFastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterFastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC9B81426E38B2A00652E7B /* InterFastAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFastAppApp.swift; sourceTree = "<group>"; };
 		6FC9B81626E38B2A00652E7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FC5F08426EF773100D18B6F /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				6FC5F08026EF752800D18B6F /* Mock.swift */,
+			);
+			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		6FC5F08526EF776B00D18B6F /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				6FC5F08826EF783C00D18B6F /* PreferencesView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		6FC9B80826E38B2900652E7B = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +132,7 @@
 		6FC9B81326E38B2A00652E7B /* InterFastApp */ = {
 			isa = PBXGroup;
 			children = (
+				6FC5F08426EF773100D18B6F /* Mock Data */,
 				6FD931E026EA8BD400A61DE7 /* Dependency Injection */,
 				6FC9B84026E3935500652E7B /* App */,
 				6FC9B84226E3939E00652E7B /* Assets */,
@@ -151,6 +176,7 @@
 		6FC9B83C26E3930E00652E7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6FC5F08526EF776B00D18B6F /* Preferences */,
 				6FD931E526EA992700A61DE7 /* Profile */,
 			);
 			path = Views;
@@ -190,7 +216,9 @@
 		6FC9B84126E3936700652E7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6FC5F08226EF759100D18B6F /* User.swift */,
 				6FD931DE26EA89F400A61DE7 /* PrivacyLevel.swift */,
+				6FC5F08A26EF7B5200D18B6F /* PrivacySetting.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -350,13 +378,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC5F08126EF752800D18B6F /* Mock.swift in Sources */,
 				6FD931E426EA901100A61DE7 /* PreferenceStore.swift in Sources */,
 				6FD931E226EA8BFE00A61DE7 /* DIContainer.swift in Sources */,
+				6FC5F08926EF783C00D18B6F /* PreferencesView.swift in Sources */,
 				6FD931E926EAB07700A61DE7 /* PrivateView.swift in Sources */,
+				6FC5F08B26EF7B5200D18B6F /* PrivacySetting.swift in Sources */,
 				6FC9B84426E3946000652E7B /* AppDelegate.swift in Sources */,
 				6FC9B81726E38B2A00652E7B /* ContentView.swift in Sources */,
 				6FC9B81526E38B2A00652E7B /* InterFastAppApp.swift in Sources */,
 				6FD931DF26EA89F400A61DE7 /* PrivacyLevel.swift in Sources */,
+				6FC5F08326EF759100D18B6F /* User.swift in Sources */,
 				6FD931ED26EAB0F500A61DE7 /* ProfileHeaderView.swift in Sources */,
 				6FC9B84626E3955D00652E7B /* ProfileView.swift in Sources */,
 				6FC9B84826E3978700652E7B /* ProfileContentProvider.swift in Sources */,
